@@ -36,15 +36,8 @@ $(function() {
 		 */
 		 it('URLs are defined', function() {
 			allFeeds.forEach(function (feed) {
-				// expect(feed.url).toBeDefined(); // Make sure it is defined
-				// expect(feed.url).not.toBe(''); // Make sure it is not empty
-
-				expect(feed.url).not.toBeFalsy();
-
-				/*	expect(feed.url).not.toBeFalsy() is more strict than
-				 *  expect(feed.url).not.toBe('') or expect(feed.url).not.toEqual(''),
-				 *	As it can also check whether the URL is defined as null, false, etc.
-				 */
+				expect(feed.url).toBeDefined(); // Make sure it is defined
+				expect(feed.url.length).toBeGreaterThan(0); // Make sure it is not empty
 			});
 		 });
 
@@ -55,15 +48,8 @@ $(function() {
 		 */
 		it('Names are defined', function() {
 			allFeeds.forEach(function (feed) {
-				// expect(feed.name).toBeDefined(); // Make sure it is defined
-				// expect(feed.name).not.toBe(''); // Make sure it is not empty
-
-				expect(feed.name).not.toBeFalsy();
-
-				/*	expect(feed.name).not.toBeFalsy() is more strict than
-				 *  expect(feed.name).not.toBe('') or expect(feed.name).not.toEqual(''),
-				 *	As it can also check whether the URL is defined as null, false, etc.
-				 */
+				expect(feed.name).toBeDefined(); // Make sure it is defined
+				expect(feed.name.length).toBeGreaterThan(0); // Make sure it is not empty
 			});
 		 });
 	});
