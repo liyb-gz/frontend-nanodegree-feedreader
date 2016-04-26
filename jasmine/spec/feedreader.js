@@ -41,7 +41,6 @@ $(function() {
 			});
 		 });
 
-
 		/* This is a test that loops through each feed
 		 * in the allFeeds object and ensures it has a name defined
 		 * and that the name is not empty.
@@ -54,10 +53,8 @@ $(function() {
 		 });
 	});
 
-
 	/* A test suite named "The menu" */
 	describe('The Menu', function () {
-
 		/* This is a test that ensures the menu element is
 		 * hidden by default.
 		 */
@@ -79,8 +76,6 @@ $(function() {
 
 	});
 
-
-
 	/* This is a new test suite named "Initial Entries" */
 	describe('Initial Entries', function () {
 		/* This is a test that ensures when the loadFeed
@@ -97,11 +92,7 @@ $(function() {
 			expect($('.feed .entry').length).toBeGreaterThan(0);
 			done();
 		});
-
 	});
-
-
-
 
 	/* This is a new test suite named "New Feed Selection" */
 	describe('New Feed Selection', function () {
